@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>search</title>
+        {# Load the tag library #}
+        {% load bootstrap3 %}
+        {% bootstrap_css %}
+        {% bootstrap_javascript %}
+
+        <!--<script type="text/javascript" src="{{ STATIC_URL }}js/jquery.js" />-->
+    </head>
+    <body>
+    <div class="jumbotron jumbotron-fluid">
+        <form   action={% url "search" %} method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+            <div class="form-group">
+                <div class="row">
+                    <div class = "col-lg-6">
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <input type="radio" name = "wayPick" id="wayPick" value="0" checked>
+                            </span>street to product
+                             <input type="text" name="way" value="0" hidden = true>
+                        </div>
+
+                    </div>
+                    <div class = "col-lg-6">
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <input type="radio"  name = "wayPick" id="wayPick" value="1">
+                            </span>product to product
+                             <input type="text" name="way" value="1" hidden = true>
+
+                        </div>
+                    </div>
+                    <div class = "col-lg-6">
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <input type="radio"  name = "wayPick" id="wayPick" value="2">
+                            </span>product to street
+                             <input type="text" name="way" value="1" hidden = true>
+
+                        </div>
+                    </div>
+                    <div class = "col-lg-6">
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <input type="radio"  name = "wayPick" id="wayPick" value="5">
+                            </span>product to street (newest)
+                             <input type="text" name="way" value="1" hidden = true>
+
+                        </div>
+                    </div>
+                    <div class = "col-lg-6">
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <input type="radio"  name = "wayPick" id="wayPick" value="6">
+                            </span>product to street (style tinder)
+                             <input type="text" name="way" value="1" hidden = true>
+
+                        </div>
+                    </div>
+                    <div class = "col-lg-6">
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <input type="radio"  name = "wayPick" id="wayPick" value="3">
+                            </span>product to street to product
+                             <input type="text" name="way" value="1" hidden = true>
+
+                        </div>
+                    </div>
+                    <div class = "col-lg-6">
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <input type="radio"  name = "wayPick" id="wayPick" value="4">
+                            </span>product to shop
+                             <input type="text" name="way" value="1" hidden = true>
+
+                        </div>
+                    </div>
+                    <div class = "col-lg-6">
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <input type="radio"  name = "wayPick" id="wayPick" value="7">
+                            </span>street to shop
+                             <input type="text" name="way" value="1" hidden = true>
+
+                        </div>
+                    </div>
+
+                </div>
+                 <div class="row">
+                     <div class = "col-md-3">
+                         <!-- Example split danger button -->
+                         <div class="input-group">
+                             <div class="input-group-addon">
+                                 <label>cat</label>
+                             </div>
+                             <select class="form-control"  id="cat" name="cat" >
+                                 <option selected value="-1">Choose...</option>
+                                 <option value="17">dress</option>
+                                 <option value="18">top</option>
+                                 <option value="19">skirt</option>
+                                 <option value="20">outwear</option>
+                                 <option value="21">bottom</option>
+                                 <option value="585">one-piece</option>
+                             </select>
+                         </div>
+                     </div>
+
+                     <!--<div class = "col-md-3">-->
+                         <!--<div class="input-group">-->
+                             <!--<span class="input-group-addon" id="sizing-addon1">cat</span>-->
+                             <!--<input type="text" class="form-control" id="cat" name="cat" value="-1">-->
+                         <!--</div>-->
+                     <!--</div>-->
+
+
+                    <div class = "col-md-3">
+                         <!-- Example split danger button -->
+                         <div class="input-group">
+                             <div class="input-group-addon">
+                                 <label>cat</label>
+                             </div>
+                             <select class="form-control"  id="subcat" name="subcat" >
+                                 <option selected value="-1">Choose...</option>
+                                 <option value="197">197 tunic</option>
+                                 <option value="200">200 cropped top</option>
+                                 <option value="574">574 tank top</option>
+                                 <option value="680">680 Bodysuit</option>
+                                 <option value="193">193 blouse</option>
+                                 <option value="195">195 tshirt</option>
+                                 <option value="488">488 shorts</option>
+                                 <option value="581">581 leggings</option>
+                                 <option value="582">582 pants</option>
+                                 <option value="583">583 jeans</option>
+                                 <option value="495">495 bodycon drs</option>
+                                 <option value="499">499 aline drs</option>
+                                 <option value="678">678 shirt drs</option>
+                                 <option value="586">586 playsuits</option>
+                                 <option value="587">587 jumpsuits</option>
+                                 <option value="208">208 jacket</option>
+                                 <option value="211">211 coat</option>
+                                 <option value="212">212 blazer</option>
+                                 <option value="577">577 vest</option>
+                                 <option value="578">578 sweater</option>
+                                 <option value="580">580 cardigan</option>
+                                 <option value="202">202 straight skt</option>
+                                 <option value="204">204 aline skt</option>
+                                 <option value="575">575 bodycon skt</option>
+                             </select>
+                         </div>
+                     </div>
+                     <!--<div class = "col-md-3">-->
+                         <!--<div class="input-group">-->
+                             <!--<span class="input-group-addon" id="sizing-addon2">subcat</span>-->
+                             <!--<input type="text" class="form-control" id="subcat" name="subcat" value="-1">-->
+                         <!--</div>-->
+                     <!--</div>-->
+                 </div>
+                <div class="row">
+                    <div class = "col-md-3">
+                        <label for="image">image</label>
+                        <input type="file" class="form-control-file" id="image" name="image">
+                    </div>
+
+                </div>
+                <div class = "row">
+                        <div class="input-group">
+                             <span class="input-group-addon" id="sizing-addon3">image_url</span>
+                             <input type="text" class="form-control" id="image_url" name="image_url" value="-1">
+                        </div>
+                    </div>
+                <br>
+                <input type="submit" value="search" class="btn btn-primary">
+            </div>
+        </form>
+        <div>
+            <img  src="{{img_o}}" alt="{{img_o}}">
+        </div>
+    </div>
+    <br>
+    {% for idx,res in result.items %}
+    <div class="jumbotron jumbotron-fluid">
+        <h2>{{idx}}</h2>
+
+
+        <div class="container">
+            {%for idx2,res2 in ori_img.items%}
+            {% if idx == idx2 %}
+                <img  src="{{res2}}" class="img-thumbnail" height="100" width="100" alt="{{res2}}">
+            {% endif %}
+            {% endfor %}
+        </div>
+        <br>
+        {%for key, re in res.items%}
+        <h3>{{key}}</h3>
+        <div class="container">
+            {%for r in re %}
+                <div class = "col-lg-2">
+                    <img  src="{{r.url}}" class="img-thumbnail" height="100" width="100" alt="{{r.url}}">
+                    <br>{{r.product_id}}<br>
+                    {{r.subcategory}}
+                    <br>{{re.distances}}
+                </div>
+            {% endfor %}
+        </div>
+        {% endfor %}
+    </div>
+    <br>
+    {% endfor %}
+
+
+    </body>
+</html>

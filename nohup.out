@@ -1,0 +1,9 @@
+Watching for file changes with StatReloader
+[11/Nov/2019 02:30:51] "GET /search/ HTTP/1.1" 200 1774
+WARNING:root:True
+WARNING:root:send success
+[11/Nov/2019 02:30:53] "POST /search/ HTTP/1.1" 200 3212
+[11/Nov/2019 02:30:53] "GET /media/1-4796159.jpg HTTP/1.1" 200 29625
+[11/Nov/2019 02:30:53] "GET /media/d89ae019abdba35278586a246df8862768847da1.jpg HTTP/1.1" 200 76208
+[11/Nov/2019 02:30:53] "GET /media/2-4796159.jpg HTTP/1.1" 200 28634
+[11/Nov/2019 02:30:53] "GET /media/ca1f59e7fa942cf7a3ac6cea37cbf1dfe823099b.jpg HTTP/1.1" 200 75062

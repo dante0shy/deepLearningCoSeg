@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>search</title>
+        {# Load the tag library #}
+        {% load bootstrap3 %}
+        {% bootstrap_css %}
+        {% bootstrap_javascript %}
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body>
+    <div class="jumbotron jumbotron-fluid">
+        <form   action={% url "search" %} method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+            <div class="form-group">
+
+                <div class="row">
+                    <div class = "col-md-3">
+                        <label for="image_1">image1</label>
+                        <input type="file" class="form-control-file" id="image_1" name="image_1">
+                    </div>
+                <div class = "col-md-3">
+                        <label for="image_2">image2</label>
+                        <input type="file" class="form-control-file" id="image_2" name="image_2">
+                    </div>
+                </div>
+<!--                <div class="row">-->
+<!--                    -->
+
+<!--                </div>-->
+
+                <br>
+                <input type="submit" value="search" class="btn btn-primary">
+            </div>
+        </form>
+<!--        <div>-->
+<!--            <img  src="{{img_o2}}" alt="{{img_o2}}">-->
+<!--        </div>-->
+    </div>
+    <br>
+                {% for re in result %}
+
+    <div class="jumbotron jumbotron-fluid">
+<!--        <div class="container">-->
+
+        <div class="container">
+                <div class = "col-lg-4">
+                    <img  src="{{re.o}}" class="img-thumbnail" height="512" width="512" alt="{{re.o}}">
+                </div>
+                <div class = "col-lg-4">
+                    <img  src="{{re.p}}" class="img-thumbnail" height="512" width="512" alt="{{re.p}}">
+                </div>
+        </div>
+<!--        <div class="container">-->
+<!--                -->
+
+<!--        </div>-->
+<!--        </div>-->
+
+    </div>
+                    {% endfor %}
+
+    <br>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.dropdown-toggle').dropdown();
+        });
+   </script>
+
+    </body>
+</html>
