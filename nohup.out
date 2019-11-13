@@ -28,3 +28,5 @@ WARNING:root:send success
 Not Found: /favicon.ico
 WARNING:django.request:Not Found: /favicon.ico
 [13/Nov/2019 08:59:11] "GET /favicon.ico HTTP/1.1" 404 2353
+[13/Nov/2019 09:15:27] "GET /search/ HTTP/1.1" 200 1774
+[13/Nov/2019 09:16:50] "GET /search/ HTTP/1.1" 200 1774

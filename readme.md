@@ -1,4 +1,6 @@
-
+Co-segmentation network and web demo
+========
+This project is for the training of the co-segmentation network and a simple website of the project 
 
 envirnment: 
 
