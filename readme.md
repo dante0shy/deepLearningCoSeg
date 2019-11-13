@@ -1,6 +1,8 @@
 
 
-envirnment 
+envirnment: 
+
+all our envirnment is based on the Anaconda3, you can run code below in your anaconda envirnment directly
 
     conda install python=3.7 cudatoolkit=10 cudnn pytorch torchvision
     conda install -c anaconda django 
@@ -9,7 +11,7 @@ envirnment
 
 model can be downloaded at [Google driver](https://drive.google.com/open?id=1R9wS8QJLp-f15chhOhNgpK7vAkCjtLDj).
 
-start web demo:
+start web demo in your anaconda envirnment:
     
     sh set_up.sh 
     ##make sure CUDA_VISIBLE_DEVICES is exsisting if there is a multi gpu envirnemnt, default is 0
