@@ -30,3 +30,39 @@ WARNING:django.request:Not Found: /favicon.ico
 [13/Nov/2019 08:59:11] "GET /favicon.ico HTTP/1.1" 404 2353
 [13/Nov/2019 09:15:27] "GET /search/ HTTP/1.1" 200 1774
 [13/Nov/2019 09:16:50] "GET /search/ HTTP/1.1" 200 1774
+[13/Nov/2019 09:30:14] "GET /search/ HTTP/1.1" 200 1774
+WARNING:root:True
+WARNING:root:send success
+[13/Nov/2019 09:30:29] "POST /search/ HTTP/1.1" 200 3212
+[13/Nov/2019 09:30:29] "GET /media/1-3753832.jpg HTTP/1.1" 200 25910
+[13/Nov/2019 09:30:29] "GET /media/8802d86ac1409bd99fc4df15779fdc46adc51731.jpg HTTP/1.1" 200 86668
+[13/Nov/2019 09:30:30] "GET /media/73c1d582c87ff2e252d200e8db253df0e299b046.jpg HTTP/1.1" 200 57411
+[13/Nov/2019 09:30:30] "GET /media/2-3753832.jpg HTTP/1.1" 200 17071
+WARNING:root:True
+WARNING:root:send success
+[13/Nov/2019 09:33:21] "POST /search/ HTTP/1.1" 200 3212
+[13/Nov/2019 09:33:21] "GET /media/1-3473629.jpg HTTP/1.1" 200 29625
+[13/Nov/2019 09:33:21] "GET /media/d89ae019abdba35278586a246df8862768847da1.jpg HTTP/1.1" 200 76208
+[13/Nov/2019 09:33:21] "GET /media/ca1f59e7fa942cf7a3ac6cea37cbf1dfe823099b.jpg HTTP/1.1" 200 75062
+[13/Nov/2019 09:33:21] "GET /media/2-3473629.jpg HTTP/1.1" 200 28634
+[13/Nov/2019 12:14:16] "GET /search/ HTTP/1.1" 200 1774
+Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+[13/Nov/2019 12:14:17] "GET /favicon.ico HTTP/1.1" 404 2353
+WARNING:root:True
+WARNING:root:send success
+[13/Nov/2019 12:14:46] "POST /search/ HTTP/1.1" 200 3212
+[13/Nov/2019 12:14:46] "GET /media/1-7997850.jpg HTTP/1.1" 200 46378
+[13/Nov/2019 12:14:46] "GET /media/20f008eb4c368bf2111c87809ac68144b3c7ffdb.jpg HTTP/1.1" 200 191487
+[13/Nov/2019 12:14:46] "GET /media/1e7d852494a39724a0e6615ed18eca7dfc4a9b8a.jpg HTTP/1.1" 200 129338
+[13/Nov/2019 12:14:47] "GET /media/2-7997850.jpg HTTP/1.1" 200 41801
+[14/Nov/2019 01:59:32] "HEAD /search/ HTTP/1.1" 200 1774
+[14/Nov/2019 01:59:32] "GET /search/ HTTP/1.1" 200 1774
+[14/Nov/2019 01:59:33] "GET /search/ HTTP/1.1" 200 1774
+Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+[14/Nov/2019 01:59:33] "GET /favicon.ico HTTP/1.1" 404 2353
+[14/Nov/2019 03:03:56] "GET /search/ HTTP/1.1" 200 1774
+Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+[14/Nov/2019 03:03:58] "GET /favicon.ico HTTP/1.1" 404 2353

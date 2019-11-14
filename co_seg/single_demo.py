@@ -17,7 +17,7 @@ parser.add_argument('--image1', default=os.path.join(os.path.dirname(os.path.dir
 parser.add_argument('--image2', default=os.path.join(os.path.dirname(os.path.dirname(__file__)),'extansion','test2.jpg'),type=str, help="image2 path")
 parser.add_argument('--output1', default=os.path.join(os.path.dirname(os.path.dirname(__file__)),'extansion','r1.jpg'),type=str, help="output1")
 parser.add_argument('--output2', default=os.path.join(os.path.dirname(os.path.dirname(__file__)),'extansion','r2.jpg'),type=str, help="output2")
-parser.add_argument('--model',default=os.path.join(os.path.dirname(__file__),'model','epoch1iter12000.pkl') ,type=str, help="model path")
+parser.add_argument('--model',default=os.path.join(os.path.dirname(__file__),'model_path','epoch1iter12000.pkl') ,type=str, help="model path")
 args = parser.parse_args()
 
 
