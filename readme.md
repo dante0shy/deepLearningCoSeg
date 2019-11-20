@@ -9,9 +9,16 @@ all our envirnment is based on the Anaconda3, you can run code below in your ana
     conda install -c anaconda django 
     conda install -c conda-forge django-bootstrap3=10.0 django-jquery 
     pip install -r requirement.txt
+    pip install Jupyter
 
 model can be downloaded at [Google driver](https://drive.google.com/open?id=1R9wS8QJLp-f15chhOhNgpK7vAkCjtLDj).
 training dataset is based on the [Pascol VoC](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/VOCtrainval_11-May-2012.tar)
+
+If using jupyter:
+    
+    jupyter notebook --no-browser --port=8889
+    
+    then use Jupyter
 
 dataset generate:
     
