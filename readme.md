@@ -18,9 +18,10 @@ If using jupyter:
     
     jupyter notebook --no-browser --port=8889
     
-    then use Jupyter
+    #ensure you do the dataset generation first
+    #then use Jupyter
 
-dataset generate:
+ dataset generation:
     
     #put the python files in co-seg/datasets into the data set postion
     #evaluation with next order
